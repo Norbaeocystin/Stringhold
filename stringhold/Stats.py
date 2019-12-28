@@ -94,6 +94,34 @@ class Stats():
         ascii_length = len([True for item in string if ord(item) < 128])
         return (ascii_length/length)*100
     
+    def get_empty_ratio(self, string):
+        """
+
+        Returns ratio in percents of empty space in string
+
+        Parameters
+        ----------
+        string : str
+            string to be checked.
+
+        Returns
+        -------
+        float
+            percentages of empty space in string.
+        
+        Examples
+        --------
+        >>> stats.get_empty_ratio('string')
+        0.0
+        >>> stats.get_empty_ratio(' ')
+        100.0
+        >>> stats.get_empty_ratio('word ')
+        20.0
+        """
+        length = len(string)
+        empty = string.count(' ')
+        return (empty/length)*100
+    
 if __name__ == "__main__":
     import doctest
     doctest.testmod(extraglobs={'stats': Stats()})
