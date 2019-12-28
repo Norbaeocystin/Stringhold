@@ -21,7 +21,7 @@ class Stats():
         Returns
         -------
         float
-            percent of ascii characters in string.
+            percentages of ascii characters in string.
         
         Examples
         --------
@@ -50,7 +50,7 @@ class Stats():
         Returns
         -------
         float
-            percent of digit characters in string.
+            percentages of digit characters in string.
         
         Examples
         --------
@@ -79,7 +79,7 @@ class Stats():
         Returns
         -------
         float
-            percent of ascii characters in string.
+            percentages of ascii characters in string.
         
         Examples
         --------
